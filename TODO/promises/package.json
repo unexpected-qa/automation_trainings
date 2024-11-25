@@ -1,0 +1,8 @@
+{
+  "name": "@happn-qa-tutorials/promises",
+  "version": "0.0.1",
+  "main": "entrypoint.js",
+  "scripts": {
+    "start": "node entrypoint.js"
+  }
+}
