@@ -1,1 +1,0 @@
-You must print out to the console the sentence "Hello, YOUR_FIRST_NAME!".

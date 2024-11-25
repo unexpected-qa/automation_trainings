@@ -1,0 +1,4 @@
+- You must open the console and manipulate variables
+- Create a git branch named: exercice2/adrian
+- Commit your changes
+- Deploy your branch
