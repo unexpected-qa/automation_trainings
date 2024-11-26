@@ -1,0 +1,6 @@
+- Create a git branch named: exerciceX/NAME
+- You must define a variable to contain a first name
+- You must define a variable to contain a likes count
+- You must define a variable to contain a user information
+- Commit your changes
+- Deploy your branch

@@ -1,0 +1,7 @@
+- Create a git branch named: exerciceX/NAME
+- You must add a title to the page with javascript
+- You must display an alert when user clicks on a button
+- You must remove the button while user closes the alert
+  - https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/close_event
+- Commit your changes
+- Deploy your branch

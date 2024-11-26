@@ -1,4 +1,5 @@
+- You must setup your automation training project
+- Create a git branch named: exerciceX/NAME
 - You must print out to the console the sentence "Hello, YOUR_FIRST_NAME!".
-- Create a git branch named: exercice1/adrian
 - Commit your changes
 - Deploy your branch
