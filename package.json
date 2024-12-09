@@ -1,0 +1,15 @@
+{
+  "name": "@happn-qa/js-and-wdio-training",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "onchange -i -k -v 'src/**/*' -- npm run start",
+    "start": "serve public",
+    "test": "wdio wdio.conf.js"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "onchange": "^7.1.0",
+    "serve": "^14.2.4"
+  }
+}
