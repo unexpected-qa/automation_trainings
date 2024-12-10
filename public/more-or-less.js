@@ -8,32 +8,45 @@ const debugButtonElement = document.getElementById('debug');
 
 attemptsSpanElement.innerText = currentAttempt.toString();
 
-function onFormSubmit() {
+function incrementCurrentAttempts() {
   currentAttempt++;
+}
+
+function getUserInputNumber() {
+  const userInputNumber = Number(numberInputElement.value);
+  return userInputNumber
+}
+
+function displayGameOver(gameOverReason) {
+  let message = ""
+  if (gameOverReason === 'maxAttempts') {
+    message = 'You lost! The number was ' + randomNumber
+  } else if (gameOverReason === 'win') {
+    message = 'Congratulations! You guessed the number!'
+  }
+  
+  alert(message);
+  location.reload();
+}
+
+function updateMessage(message) {
+  messageParagraphElement.innerText = message;
+}
+
+function onFormSubmit() {
   attemptsSpanElement.innerText = currentAttempt.toString();
+  
+  incrementCurrentAttempts();
 
   messageParagraphElement.innerText = '';
 
-  if (currentAttempt > 10) {
-    alert('You lost! The number was ' + randomNumber);
-    return location.reload();
-  }
+  if (currentAttempt > 10) displayGameOver('maxAttempts');
 
-  const number = Number(numberInputElement.value);
+  const number = getUserInputNumber();
 
-  if (number === randomNumber) {
-    alert('Congratulations! You guessed the number!');
-    return location.reload();
-  }
-
-  if (number < randomNumber) {
-    messageParagraphElement.innerText = 'Try a higher number!';
-    return
-  }
-
-  if (number > randomNumber) {
-    messageParagraphElement.innerText = 'Try a lower number!';
-  }
+  if (number === randomNumber) displayGameOver('win');
+  else if (number < randomNumber) updateMessage('Try a higher number!');
+  else updateMessage('Try a lower number!');
 }
 
 debugButtonElement.addEventListener('click', () => {
