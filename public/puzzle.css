@@ -1,0 +1,26 @@
+#puzzle-board, #puzzle-pieces {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+    margin-bottom: 1rem;
+}
+
+#puzzle-board div, .puzzle-piece {
+    height: 120px;
+    background-color: #e0e0e0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.puzzle-piece:active {
+    cursor: grabbing;
+}
+
+.puzzle-piece:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}

@@ -9,6 +9,7 @@
   "dependencies": {
   },
   "devDependencies": {
+    "jest": "^29.7.0",
     "onchange": "^7.1.0",
     "serve": "^14.2.4"
   }
