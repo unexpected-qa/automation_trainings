@@ -1,0 +1,53 @@
+#actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#actions img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s;
+}
+
+#actions img:hover {
+    transform: scale(1.1);
+}
+
+#play {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #0073e6;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#play:hover {
+    background-color: #005bb5;
+}
+
+#results {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#results h2 {
+    color: #0073e6;
+}
+
+#results p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}

@@ -1,6 +1,4 @@
 {
-    "recommendations": [
-        "dbaeumer.vscode-eslint",
-        "ritwickdey.liveserver"
-    ]
+  "recommendations": [
+  ]
 }

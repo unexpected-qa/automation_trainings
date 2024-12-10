@@ -29,6 +29,19 @@
 </nav>
 <main>
     <h1>MoreOrLess</h1>
+    <p>Find the number between 0 and 100</p>
+
+    <p>Attempt: <span id="attempts">1</span>/10</p>
+
+    <form action="javascript: onFormSubmit()" id="form">
+        <label for="number">Enter a number:</label>
+        <input id="number" max="100" min="0" type="number"/>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+
+    <p id="message"></p>
+
+    <button id="debug">Debug</button>
 </main>
 <script src="more-or-less.js"></script>
 </body>
