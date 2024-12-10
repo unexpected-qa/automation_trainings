@@ -15,27 +15,27 @@ function onFormSubmit() {
   messageParagraphElement.innerText = '';
 
   if (currentAttempt > 10) {
-    alert('You lost! The number was ' + randomNumber);
+    alert('Vous avez perdu ! Le nombre était ' + randomNumber);
     return location.reload();
   }
 
   const number = Number(numberInputElement.value);
 
   if (number === randomNumber) {
-    alert('Congratulations! You guessed the number!');
+    alert('Félicitations ! Vous avez deviné le nombre !');
     return location.reload();
   }
 
   if (number < randomNumber) {
-    messageParagraphElement.innerText = 'Try a higher number!';
-    return
+    messageParagraphElement.innerText = 'Essayez un nombre plus grand !';
+    return;
   }
 
   if (number > randomNumber) {
-    messageParagraphElement.innerText = 'Try a lower number!';
+    messageParagraphElement.innerText = 'Essayez un nombre plus petit !';
   }
 }
 
 debugButtonElement.addEventListener('click', () => {
   alert(randomNumber);
-})
+});
